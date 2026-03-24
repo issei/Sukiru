@@ -1,17 +1,15 @@
 ---
 name: manage-openai-skills
-description: >-
-  Use esta skill quando o utilizador pedir para importar, procurar ou instalar
-  uma skill do catálogo oficial da OpenAI (openai/skills). Activa-se em pedidos
-  como "instala a skill X da OpenAI", "importa skill openai/skills/..." ou
-  "quais skills OpenAI existem". Não use para skills do repositório
-  Jaganpro/sf-skills (use manage-sf-skills) nem para skills já presentes
-  localmente em .agents/skills/.
+description: Use esta skill quando o utilizador pedir para importar, procurar ou instalar
+  uma skill do catálogo oficial da OpenAI (openai/skills). Activa-se em pedidos como
+  "instala a skill X da OpenAI", "importa skill openai/skills/..." ou "quais skills
+  OpenAI existem". Não use para skills do repositório Jaganpro/sf-skills (use manage-sf-skills)
+  nem para skills já presentes localmente em .agents/skills/.
 license: Apache-2.0
+compatibility: Requer svn (Subversion) instalado e acesso à internet (github.com)
 metadata:
   author: issei
-  version: "1.0"
-compatibility: Requer svn (Subversion) instalado e acesso à internet (github.com)
+  version: '1.0'
 ---
 
 # manage-openai-skills

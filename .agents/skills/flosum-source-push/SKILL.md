@@ -1,7 +1,10 @@
 ---
 name: flosum-source-push
-description: Push local Salesforce metadata from a source folder to a Flosum repository branch. Use after making local changes that need to be committed back to Flosum version control.
-triggers:
+description: Push local Salesforce metadata from a source folder to a Flosum repository
+  branch. Use after making local changes that need to be committed back to Flosum
+  version control.
+metadata:
+  triggers:
   - push to flosum
   - flosum source push
   - upload metadata flosum

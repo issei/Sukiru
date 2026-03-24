@@ -1,7 +1,10 @@
 ---
 name: flosum-deploy
-description: End-to-end Flosum deployment workflow — validate locally, push to branch, promote via Flosum pipeline, and verify the result. Use when deploying a feature branch to a sandbox or production.
-triggers:
+description: End-to-end Flosum deployment workflow — validate locally, push to branch,
+  promote via Flosum pipeline, and verify the result. Use when deploying a feature
+  branch to a sandbox or production.
+metadata:
+  triggers:
   - deploy flosum
   - flosum deployment
   - promote flosum branch

@@ -1,6 +1,6 @@
 ---
 name: test-skill
-description: "Uma skill de teste para validar a estrutura do repositório."
+description: Uma skill de teste para validar a estrutura do repositório.
 ---
 
 # Test Skill

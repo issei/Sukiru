@@ -1,7 +1,9 @@
 ---
 name: flosum-setup
-description: Install and verify all prerequisites for the flosum-sfdx-plugin. Use this before any other Flosum CLI skill or when setting up a fresh machine/CI environment.
-triggers:
+description: Install and verify all prerequisites for the flosum-sfdx-plugin. Use
+  this before any other Flosum CLI skill or when setting up a fresh machine/CI environment.
+metadata:
+  triggers:
   - setup flosum
   - install flosum plugin
   - configure flosum cli
