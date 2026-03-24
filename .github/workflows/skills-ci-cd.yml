@@ -1,0 +1,78 @@
+name: Sukiru Skills CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate-skills:
+    name: CI - Linting de Skills
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Validar estrutura e YAML Frontmatter das Skills
+        run: |
+          echo "Iniciando validação das skills..."
+          ERROR=0
+          
+          for SKILL_DIR in .agents/skills/*/; do
+            if [ ! -d "$SKILL_DIR" ]; then continue; fi
+            
+            SKILL_FILE="${SKILL_DIR}SKILL.md"
+            if [ ! -f "$SKILL_FILE" ]; then
+              echo "❌ Erro: Ficheiro SKILL.md não encontrado na pasta $SKILL_DIR"
+              ERROR=1
+              continue
+            fi
+            
+            # Verificar frontmatter
+            if ! head -n 1 "$SKILL_FILE" | grep -q "^---$"; then
+              echo "❌ Erro: SKILL.md em $SKILL_DIR não inicia com '---' (YAML frontmatter)"
+              ERROR=1
+            fi
+            
+            if ! grep -q "^name:" "$SKILL_FILE"; then
+              echo "❌ Erro: Chave 'name:' não encontrada no frontmatter de $SKILL_FILE"
+              ERROR=1
+            fi
+            
+            if ! grep -q "^description:" "$SKILL_FILE"; then
+              echo "❌ Erro: Chave 'description:' não encontrada no frontmatter de $SKILL_FILE"
+              ERROR=1
+            fi
+          done
+          
+          if [ $ERROR -eq 1 ]; then
+            echo "A validação falhou. Corrija os erros acima."
+            exit 1
+          fi
+          echo "✅ Todas as skills passaram na validação estrutural."
+
+  update-docs:
+    name: CD - Atualização de Documentação Viva
+    needs: validate-skills
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Gerar Índices (README e llms.txt)
+        run: python scripts/update_docs.py
+
+      - name: Commit e Push das alterações
+        run: |
+          git config --global user.name "Sukiru Bot"
+          git config --global user.email "bot@sukiru.dev"
+          git add README.md llms.txt
+          # Só faz commit se houver alterações
+          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: auto-atualização do catálogo de skills" && git push)

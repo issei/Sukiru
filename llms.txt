@@ -1,0 +1,5 @@
+# Sukiru: Agent Skills Directory
+
+Este ficheiro é um índice otimizado para IAs das skills disponíveis neste repositório.
+
+- [test-skill](.agents/skills/test-skill/SKILL.md): "Uma skill de teste para validar a estrutura do repositório."
