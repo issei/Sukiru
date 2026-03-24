@@ -1,7 +1,10 @@
 ---
 name: flosum-source-pull
-description: Pull Salesforce metadata from a Flosum repository branch to a local directory. Use when starting work on a branch, syncing local changes with remote, or retrieving tagged snapshots.
-triggers:
+description: Pull Salesforce metadata from a Flosum repository branch to a local directory.
+  Use when starting work on a branch, syncing local changes with remote, or retrieving
+  tagged snapshots.
+metadata:
+  triggers:
   - pull from flosum
   - flosum source pull
   - download metadata flosum

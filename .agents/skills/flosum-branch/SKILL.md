@@ -1,7 +1,10 @@
 ---
 name: flosum-branch
-description: Create a new Flosum branch, clone an existing branch to local, or inspect branches inside a repository. Use for feature branch workflows, hotfix branching, and release branching.
-triggers:
+description: Create a new Flosum branch, clone an existing branch to local, or inspect
+  branches inside a repository. Use for feature branch workflows, hotfix branching,
+  and release branching.
+metadata:
+  triggers:
   - create flosum branch
   - clone flosum branch
   - new branch flosum

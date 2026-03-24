@@ -1,7 +1,10 @@
 ---
 name: flosum-repo
-description: List Flosum repositories and clone a repository (or a specific branch) to a local directory. Use before branch or source operations when working with a repo for the first time.
-triggers:
+description: List Flosum repositories and clone a repository (or a specific branch)
+  to a local directory. Use before branch or source operations when working with a
+  repo for the first time.
+metadata:
+  triggers:
   - list flosum repositories
   - clone flosum repo
   - flosum repository

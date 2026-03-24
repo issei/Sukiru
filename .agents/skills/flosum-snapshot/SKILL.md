@@ -1,7 +1,9 @@
 ---
 name: flosum-snapshot
-description: Create a Flosum org snapshot before a risky deployment or at a release milestone. Snapshots serve as rollback points. Use before promoting to UAT or Production.
-triggers:
+description: Create a Flosum org snapshot before a risky deployment or at a release
+  milestone. Snapshots serve as rollback points. Use before promoting to UAT or Production.
+metadata:
+  triggers:
   - flosum snapshot
   - create flosum snapshot
   - rollback flosum

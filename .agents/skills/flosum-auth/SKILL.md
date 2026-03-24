@@ -1,7 +1,10 @@
 ---
 name: flosum-auth
-description: Authenticate an SFDX org that is connected to Flosum. Run this before any repository, branch, or source operation. Covers both interactive browser login and CI/CD non-interactive flows.
-triggers:
+description: Authenticate an SFDX org that is connected to Flosum. Run this before
+  any repository, branch, or source operation. Covers both interactive browser login
+  and CI/CD non-interactive flows.
+metadata:
+  triggers:
   - authenticate flosum
   - login flosum org
   - flosum auth
