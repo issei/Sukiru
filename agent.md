@@ -22,23 +22,29 @@ Se a documentação e o código divergem, **a documentação vence**. Corrija o 
 .
 ├── agent.md                  # Este arquivo — onboarding e regras do agente
 ├── README.md                 # Visão geral pública do projeto
-├── docs/
+├── docs/                     # Documentação técnica e histórico
 │   ├── architecture.md       # Decisões arquiteturais e ADRs
-│   ├── features/             # Specs de funcionalidades (uma pasta por feature)
+│   ├── features/             # Specs de funcionalidades
 │   │   └── <feature>/
 │   │       ├── spec.md       # Requisitos e comportamento esperado
 │   │       ├── design.md     # Decisões técnicas da feature
 │   │       └── tasks.md      # Breakdown de tarefas
-│   └── changelog.md          # Histórico de mudanças
-├── .agents/
+│   └── changelog.md          # Histórico de mudanças (DocDD)
+├── .agent/                   # Configurações de infraestrutura do harness
+│   └── rules/                # Regras de codificação e padrões (ECC)
+├── .agents/                  # Ecossistema de extensaibilidade
+│   ├── agents/               # Definições de subagentes especializados
+│   ├── commands/             # Comandos customizados para o agente
 │   └── skills/               # Skills locais do projeto (padrão agentskills.io)
 │       └── <skill-name>/
 │           ├── SKILL.md      # Obrigatório: frontmatter YAML + instruções
 │           ├── scripts/      # Opcional: scripts executáveis
 │           ├── references/   # Opcional: documentação complementar
 │           └── assets/       # Opcional: templates, recursos
+│   └── workflows/            # Fluxos de trabalho automatizados
 └── src/                      # Código-fonte
 ```
+
 
 ---
 

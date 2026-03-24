@@ -10,7 +10,7 @@ Este ficheiro é um índice otimizado para IAs das skills disponíveis neste rep
 - [flosum-snapshot](.agents/skills/flosum-snapshot/SKILL.md): Create a Flosum org snapshot before a risky deployment or at a release milestone. Snapshots serve as rollback points. Use before promoting to UAT or Production.
 - [flosum-source-pull](.agents/skills/flosum-source-pull/SKILL.md): Pull Salesforce metadata from a Flosum repository branch to a local directory. Use when starting work on a branch, syncing local changes with remote, or retrieving tagged snapshots.
 - [flosum-source-push](.agents/skills/flosum-source-push/SKILL.md): Push local Salesforce metadata from a source folder to a Flosum repository branch. Use after making local changes that need to be committed back to Flosum version control.
-- [manage-ecc-ecosystem](.agents/skills/manage-ecc-ecosystem/SKILL.md): >-
-- [manage-openai-skills](.agents/skills/manage-openai-skills/SKILL.md): >-
-- [manage-sf-skills](.agents/skills/manage-sf-skills/SKILL.md): >-
+- [manage-ecc-ecosystem](.agents/skills/manage-ecc-ecosystem/SKILL.md): Cria, instala ou invoca regras e subagentes do ecossistema ECC.
+- [manage-openai-skills](.agents/skills/manage-openai-skills/SKILL.md): Importa skills do catálogo oficial `openai/skills` via SVN/Clone.
+- [manage-sf-skills](.agents/skills/manage-sf-skills/SKILL.md): Instala competências Salesforce do repositório Jaganpro.
 - [test-skill](.agents/skills/test-skill/SKILL.md): "Uma skill de teste para validar a estrutura do repositório."
