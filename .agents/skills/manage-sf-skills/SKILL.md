@@ -1,15 +1,14 @@
 ---
 name: manage-sf-skills
-description: 'Use esta skill quando o utilizador pedir para instalar, procurar ou
-  gerir skills externas de Salesforce (ex: sf-apex, sf-lwc, sf-flow, sf-soql). Executa
-  o CLI oficial `npx skills add` a partir do repositório Jaganpro/sf-skills e valida
-  a instalação em .agents/skills/. Não use para skills já instaladas localmente nem
-  para skills que não sejam de Salesforce.'
+description: >-
+  Manage the Salesforce and Flosum skill collection by adding or updating flosum-specific skills.
+  Use when the user wants to ensure the collection is consistent and follows standard conventions.
+  Do NOT use for general Salesforce development outside of the Flosum CLI workflow.
 license: Apache-2.0
 compatibility: Requer Node.js 18+ e acesso à internet (npmjs.com / GitHub)
 metadata:
   author: issei
-  version: '1.0'
+  version: "1.1"
 ---
 
 # manage-sf-skills

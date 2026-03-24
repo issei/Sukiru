@@ -1,15 +1,14 @@
 ---
 name: manage-openai-skills
-description: Use esta skill quando o utilizador pedir para importar, procurar ou instalar
-  uma skill do catálogo oficial da OpenAI (openai/skills). Activa-se em pedidos como
-  "instala a skill X da OpenAI", "importa skill openai/skills/..." ou "quais skills
-  OpenAI existem". Não use para skills do repositório Jaganpro/sf-skills (use manage-sf-skills)
-  nem para skills já presentes localmente em .agents/skills/.
+description: >-
+  Manage Agent Skills for OpenAI Codex by adding, updating, or syncing skills from the official repository.
+  Use when the user wants to import curated or experimental skills into this library.
+  Do NOT use for Claude Code specific skills or for tasks unrelated to the Codex harness.
 license: Apache-2.0
 compatibility: Requer svn (Subversion) instalado e acesso à internet (github.com)
 metadata:
   author: issei
-  version: '1.0'
+  version: "1.1"
 ---
 
 # manage-openai-skills

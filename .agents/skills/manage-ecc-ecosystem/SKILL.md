@@ -1,13 +1,14 @@
 ---
 name: manage-ecc-ecosystem
-description: Cria, instala, configura ou invoca regras, módulos de segurança e subagentes
-  do ecossistema ECC (Everything Claude Code). Utilize esta skill quando for necessário
-  importar bibliotecas de regras ou orquestrar subagentes do repositório affaan-m/everything-claude-code.
+description: >-
+  Manage the Everything Claude Code (ECC) agent harness by installing, updating, and configuring its components.
+  Use when the user wants to set up or troubleshoot the ECC plugin ecosystem across various platforms.
+  Do NOT use for general coding tasks or for installing individual skills outside of ECC.
 license: MIT
 compatibility: Requer Node.js 18+ e capacidade de execução npx.
 metadata:
   author: AI Architect
-  version: '1.0'
+  version: "1.1"
 ---
 
 # manage-ecc-ecosystem

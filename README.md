@@ -34,9 +34,9 @@ Biblioteca centralizada de habilidades e fluxos de trabalho especializados para 
 | **[frontend-slides](.agents/skills/frontend-slides/SKILL.md)** | Create stunning, animation-rich HTML presentations from scratch or by |
 | **[investor-materials](.agents/skills/investor-materials/SKILL.md)** | Create and update pitch decks, one-pagers, investor memos, accelerator |
 | **[investor-outreach](.agents/skills/investor-outreach/SKILL.md)** | Draft cold emails, warm intro blurbs, follow-ups, update emails, and |
-| **[manage-ecc-ecosystem](.agents/skills/manage-ecc-ecosystem/SKILL.md)** | Cria, instala, configura ou invoca regras, módulos de segurança e subagentes |
-| **[manage-openai-skills](.agents/skills/manage-openai-skills/SKILL.md)** | Use esta skill quando o utilizador pedir para importar, procurar ou instalar |
-| **[manage-sf-skills](.agents/skills/manage-sf-skills/SKILL.md)** | 'Use esta skill quando o utilizador pedir para instalar, procurar ou |
+| **[manage-ecc-ecosystem](.agents/skills/manage-ecc-ecosystem/SKILL.md)** | Manage ECC agent harness by installing and configuring its components. Use for ECC setup, not for general coding. |
+| **[manage-openai-skills](.agents/skills/manage-openai-skills/SKILL.md)** | Manage OpenAI Codex skills by adding or syncing from official repos. Use for Codex skills, not for Claude Code. |
+| **[manage-sf-skills](.agents/skills/manage-sf-skills/SKILL.md)** | Manage Salesforce and Flosum skill collection. Use for Flosum CLI workflows, not for general Salesforce development. |
 | **[market-research](.agents/skills/market-research/SKILL.md)** | Conduct market research, competitive analysis, investor due diligence, |
 | **[mcp-server-patterns](.agents/skills/mcp-server-patterns/SKILL.md)** | Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, |
 | **[nextjs-turbopack](.agents/skills/nextjs-turbopack/SKILL.md)** | Next.js 16+ and Turbopack — incremental bundling, FS caching, dev speed, |
