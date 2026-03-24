@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+.cursor/
+*.swp
+*.swo
+
+# Project Specific
+*.log
+.agents/temp/
+.agents/local_cache/
+
+# Local Environment
+.env
+.env.local
+.env.*.local
